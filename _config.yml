@@ -1,0 +1,55 @@
+title: Cyprien CHOUDER portfolio
+description: >-
+    Bienvenue sur mon portfolio en ligne. Découvrez mes projets, compétences et expériences dans le domaine du développement web.
+baseurl: "/port"
+url: "https://edenhash.github.io"
+repository: EdenHash/port
+remote_theme: yousinix/portfolYOU
+open_new_tab: true
+lang: fr-FR
+
+plugins:
+    - jemoji
+    - jekyll-seo-tag
+    - jekyll-sitemap
+    - jekyll-feed
+
+nav_exclude:
+    - pages/tags.html
+    - pages/404.html
+    - pages/index.md
+
+author:
+    name: Cyprien CHOUDER
+    image: img/avatar.png
+    email: cyprienchouder@gmail.com
+    github: EdenHash
+
+social:
+    name: Cyprien CHOUDER
+    links:
+        - https://github.com/EdenHash
+        - mailto: cyprienchouder@gmail.com
+
+collections:
+    projects:
+        output: true
+        permalink: /projects/:name
+
+defaults:
+    - scope:
+          path: ""
+          type: "projects"
+      values:
+          layout: "page"
+
+exclude:
+    - README.md
+    - CONTRIBUTING.md
+    - LICENSE
+    - "*.log"
+    - vendor
+    - vendor/bundle
+    - Gemfile
+    - Gemfile.lock
+    - portfolio.md

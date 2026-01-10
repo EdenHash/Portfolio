@@ -1,0 +1,15 @@
+- name: HTML / CSS
+  percentage: 30
+  color: danger
+
+- name: Tailwind CSS
+  percentage: 20
+  color: primary
+
+- name: JavaScript
+  percentage: 10
+  color: warning
+
+- name: PHP
+  percentage: 10
+  color: info

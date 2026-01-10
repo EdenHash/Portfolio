@@ -1,0 +1,9 @@
+email:
+    url: "mailto:"
+    icon: fas fa-envelope
+    color: db4437
+
+github:
+    url: https://www.github.com/
+    icon: fab fa-github
+    color: 333333

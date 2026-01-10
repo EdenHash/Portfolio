@@ -1,0 +1,9 @@
+- name: Français
+  description: Langue maternelle
+  percentage: 0
+  color: ""
+
+- name: Anglais
+  description: Niveau professionnel
+  percentage: 0
+  color: ""

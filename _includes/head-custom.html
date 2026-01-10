@@ -1,0 +1,31 @@
+<meta name="author" content="{{ site.author.name }}" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="{{ page.url | absolute_url }}" />
+
+<!-- JSON-LD Structured Data for Person Schema -->
+<script type="application/ld+json">
+	{
+	  "@context": "https://schema.org",
+	  "@type": "Person",
+	  "name": "{{ site.author.name }}",
+	  "url": "{{ site.url }}",
+	  "image": "{{ site.author.image | absolute_url }}",
+	  "jobTitle": "Développeur Web",
+	  "worksFor": {
+	    "@type": "Organization",
+	    "name": "Epitech Lille"
+	  },
+	  "email": "{{ site.author.email }}",
+	  "sameAs": [
+	    "https://github.com/{{ site.author.github }}"{% if site.author.linkedin %},
+	  ]
+	}
+</script>
+
+<style>
+	.contact-info {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+</style>
