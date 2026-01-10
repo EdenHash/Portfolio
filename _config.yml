@@ -1,9 +1,9 @@
 title: Cyprien CHOUDER portfolio
 description: >-
     Bienvenue sur mon portfolio en ligne. Découvrez mes projets, compétences et expériences dans le domaine du développement web.
-baseurl: "/port"
+baseurl: "/Portfolio"
 url: "https://edenhash.github.io"
-repository: EdenHash/port
+repository: EdenHash/Portfolio
 remote_theme: yousinix/portfolYOU
 open_new_tab: true
 lang: fr-FR
