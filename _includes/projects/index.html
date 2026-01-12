@@ -1,0 +1,15 @@
+{% for project in site.projects %}
+<div class="project">
+	{% if project.image %}
+	<img src="{{ project.image }}" alt="{{ project.name }}" />
+	{% endif %}
+	<h3>{{ project.name }}</h3>
+	{% if project.tools %}
+	<p class="tools">Outils: {{ project.tools | join: ', ' }}</p>
+	{% endif %} {% if project.description %}
+	<p>{{ project.description }}</p>
+	{% endif %} {% if project.external_url %}
+	<a href="{{ project.external_url }}" target="_blank">Voir le projet</a>
+	{% endif %}
+</div>
+{% endfor %}
