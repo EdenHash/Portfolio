@@ -9,6 +9,7 @@ open_new_tab: true
 lang: fr-FR
 
 plugins:
+    - jekyll-remote-theme
     - jemoji
     - jekyll-seo-tag
     - jekyll-sitemap
