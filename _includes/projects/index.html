@@ -1,0 +1,25 @@
+{% assign projects = site.projects %}
+
+<div class="projects">
+	{% for project in projects %}
+	<div class="project">
+		{% if project.image %}
+		<img src="{{ project.image }}" alt="{{ project.name }}" class="project-image" />
+		{% endif %}
+		<div class="project-content">
+			<h3 class="project-title">{{ project.name }}</h3>
+			{% if project.tools %}
+			<p class="project-tools">
+				{% for tool in project.tools %}
+				<span class="tool">{{ tool }}</span>
+				{% endfor %}
+			</p>
+			{% endif %} {% if project.description %}
+			<p class="project-description">{{ project.description }}</p>
+			{% endif %} {% if project.external_url %}
+			<a href="{{ project.external_url }}" class="project-link" target="_blank">Voir le projet →</a>
+			{% endif %}
+		</div>
+	</div>
+	{% endfor %}
+</div>
